@@ -1,6 +1,6 @@
 package com.cydeo.enums;
 
-public enum Status {
+public enum State {
     ACTIVE,DRAFT,SUSPENDED
 
 }

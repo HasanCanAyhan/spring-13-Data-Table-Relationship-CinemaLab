@@ -1,7 +1,7 @@
 package com.cydeo.entity;
 
 
-import com.cydeo.enums.Status;
+import com.cydeo.enums.State;
 import com.cydeo.enums.Type;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -24,7 +24,7 @@ public class Movie extends BaseEntity{
     private Type type;
 
     @Enumerated(EnumType.STRING)
-    private Status status;
+    private State state;
 
     @Column(columnDefinition = "DATE")
     private LocalDate releaseDate;
