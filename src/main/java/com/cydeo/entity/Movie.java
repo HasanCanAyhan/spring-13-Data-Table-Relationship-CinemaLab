@@ -40,6 +40,8 @@ public class Movie extends BaseEntity{
     inverseJoinColumns = @JoinColumn(name = "genre_id"))
     private List<Genre> genreList; // third table bcs many to many
 
-
+    //Why Set is better than List in @ManyToMany
+    //List: 3 query statement: delete everything , insert again, find
+    //set: 1 query statement : delete specific one
 
 }
